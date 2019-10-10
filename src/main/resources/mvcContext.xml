@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <component-scan base-package="com.small.springMvc.webappProject.controller"/>
+
+    <bean id="viewResolver" class="com.small.springMvc.framework.viewresolver.InternalResourceViewResolver">
+        <property name="viewClass" value="com.small.springMvc.framework.view.InternalResourceView"/>
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--<bean id="loggerMVCInterceptor" class="LoggerHandlerInterceptor"></bean>-->
+
+    <!--<bean id="transactionMVCInterceptor" class="TransactionHandlerInterceptor"></bean>-->
+
+    <!--<bean id="autoProxyCreator" class="com.sonihr.aop.AspectJAwareAdvisorAutoProxyCreator"></bean>-->
+
+    <!--<bean id="timeInterceptor" class="TimerInterceptor"></bean>-->
+
+    <!--<bean id="aspectjAspect" class="com.sonihr.aop.AspectJExpressionPointcutAdvisor">-->
+    <!--<property name="advice" ref="timeInterceptor"></property>-->
+    <!--<property name="expression" value= "execution(* com.sonihrmvc.webappProject.controller..*.*(..))"></property>-->
+    <!--</bean>-->
+
+</beans>
